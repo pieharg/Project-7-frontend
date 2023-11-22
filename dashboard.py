@@ -7,8 +7,7 @@ sns.set()
 import requests
 import json
 
-#url = "https://projet-7-backend-ef69878bbc3f.herokuapp.com/"
-url = "http://127.0.0.1:5000/"
+url = "https://https://project-7-40e812473cc8.herokuapp.com/"
 
 ################################################
 # Fonctions d'affichage & récolte informations #
