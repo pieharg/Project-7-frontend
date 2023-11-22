@@ -7,7 +7,7 @@ sns.set()
 import requests
 import json
 
-url = "https://https://project-7-40e812473cc8.herokuapp.com/"
+url = "https://project-7-40e812473cc8.herokuapp.com/"
 
 ################################################
 # Fonctions d'affichage & récolte informations #
