@@ -183,7 +183,7 @@ if page =='Obtention de prêt':
         if client_info.json():
             if st.button("Simuler :"):
                 score = requests.get(url+"predict/ID", params={"client_ID":client_ID}).json()
-                if score < 49 : # le seuil obtenu était 0.51 (> =mauvais payeur) avec la proba donc 49(< =mauvais payeur) avec le score 
+                if score < 48 : # le seuil obtenu était 0.52 (> =mauvais payeur) avec la proba donc 49(< =mauvais payeur) avec le score 
                     st.error(f"""Vous obtenez un score de **{round(score,1)}/100** . Cela est malheureusement trop faible pour être
                              en mesure de se voir offrir un prêt de notre part.""")
                 else :
@@ -205,7 +205,7 @@ if page =='Obtention de prêt':
                                                                 "amt_goods_price":amt_goods_price,
                                                                 "amt_credit":amt_credit,
                                                                 "amt_annuity":amt_annuity}).json()
-                if score < 49 : # le seuil obtenu était 0.51 (> =mauvais payeur) avec la proba donc 49(< =mauvais payeur) avec le score 
+                if score < 48 : # le seuil obtenu était 0.52 (> =mauvais payeur) avec la proba donc 49(< =mauvais payeur) avec le score 
                     st.error(f"""Vous obtenez un score de **{round(score,1)}/100** . Cela est malheureusement trop faible pour être
                              en mesure de se voir offrir un prêt de notre part.""")
                 else :
